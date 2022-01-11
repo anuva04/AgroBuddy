@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Home Page</title>
+    </head>
+    <body>
+        <h1>Crops Prediction</h1>
+        <form action="{% url 'result' %}">
+            {% csrf_token %}
+
+            <p>pH:</p>
+            <input type="text" name="ph">
+            <br>
+
+            <p>Moisture:</p>
+            <input type="text" name="moisture">
+            <br>
+
+            <p>Humidity:</p>
+            <input type="text" name="humidity">
+            <br>
+
+            <p>Temperature:</p>
+            <input type="text" name="temperature">
+            <br>
+
+            <input type="submit" value="Get Predictions">
+        </form>
+    </body>
+</html>
