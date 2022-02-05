@@ -3,29 +3,20 @@
     <head>
         <meta charset="utf-8">
         <title>Home Page</title>
+        <link rel="stylesheet" href="/static/css/index.css" type="text/css">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
     </head>
     <body>
-        <h1>Crops Prediction</h1>
-        <form action="{% url 'result' %}">
-            {% csrf_token %}
-
-            <p>pH:</p>
-            <input type="text" name="ph">
-            <br>
-
-            <p>Moisture:</p>
-            <input type="text" name="moisture">
-            <br>
-
-            <p>Humidity:</p>
-            <input type="text" name="humidity">
-            <br>
-
-            <p>Temperature:</p>
-            <input type="text" name="temperature">
-            <br>
-
-            <input type="submit" value="Get Predictions">
-        </form>
+        <div class="form-style-8">
+            <h2>Crops Prediction</h2>
+            <form action="{% url 'result' %}" >
+                {% csrf_token %}
+                <input type="text" name="ph" placeholder="Ph of soil" />
+                <input type="text" name="moisture" placeholder="Moisture of soil" />
+                <input type="text" name="humidity" placeholder="Humidity in atmosphere" />
+                <input type="text" name="temperature" placeholder="Current temperature" />
+                <input type="submit" value="Get Predictions" />
+            </form>
+        </div>
     </body>
 </html>

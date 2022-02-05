@@ -1,0 +1,52 @@
+.form-style-8{
+	font-family: 'Open Sans Condensed', arial, sans;
+	width: 500px;
+	padding: 30px;
+	background: #FFFFFF;
+	margin: 50px auto;
+	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+	-moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+	-webkit-box-shadow:  0px 0px 15px rgba(0, 0, 0, 0.22);
+
+}
+.form-style-8 h2{
+	background: url(../images/bgblur.jpg);
+	text-transform: uppercase;
+	font-family: 'Open Sans Condensed', sans-serif;
+	color: black;
+	font-size: 75px;
+	font-weight: 150;
+	padding: 20px;
+	margin: -30px -30px 30px -30px;
+    text-align: center;
+
+    overflow: hidden;
+    border-right: .15em solid orange;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+}
+
+.form-style-8 h3 {
+    text-align: center;
+    font-size: 50px;
+	font-weight: 100;
+}
+
+.img {
+    text-align: center;
+}
