@@ -1,27 +1,33 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>Result</title>
-    <link rel="stylesheet" href="/static/css/result.css" type="text/css">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/static/css/result.css" type="text/css" />
+    <link
+      href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300"
+      rel="stylesheet"
+      type="text/css"
+    />
   </head>
   <body>
     <div class="form-style-8">
       <h2>Prediction</h2>
 
-      <h5> Input Provided: </h5>
-      <p>Ph: {{ph}}, Moisture: {{moisture}}, Humidity: {{humidity}}, Temperature: {{temp}} </p>
-      <hr>
+      <h5>Input Provided:</h5>
+      <p>
+        Ph: {{ph}}, Moisture: {{moisture}}, Humidity: {{humidity}}, Temperature: {{temp}}
+      </p>
+      <hr />
 
       <h3>{{ result }}</h3>
-      {{ wiki }} <br>
-      <a href="https://www.google.com/search?q={{result}}" target="_blank" >Read More</a>
-      <br>
-      <br>
-      <div class="img"><img src={{ image }} alt="Girl in a jacket"></div>
+      {{ wiki }} <br />
+      <a href="https://www.google.com/search?q={{result}}" target="_blank"
+        >Read More</a
+      >
+      <br />
+      <br />
+      <div class="img"><img src="{{" image }} alt="Load again" /></div>
     </div>
-    
-    
   </body>
 </html>
