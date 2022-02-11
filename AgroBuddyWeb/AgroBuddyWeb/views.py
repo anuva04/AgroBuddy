@@ -1,10 +1,8 @@
-from ast import parse
 from django.shortcuts import render
-import pickle
-import os
 import wikipedia
 import requests
 import environ
+from .__init__ import model, sc
 
 # retrieving environment variables
 env = environ.Env()
@@ -44,8 +42,6 @@ def home(request):
 
 # method for generating predictions
 def getPredictions(ph, moisture, humidity, temperature):
-    model = pickle.load(open(os.path.dirname(os.path.realpath(__file__)) + '\crops.sav', "rb"))
-    sc = pickle.load(open(os.path.dirname(os.path.realpath(__file__)) + '\scaler.sav', "rb"))
     prediction = model.predict(sc.transform([[ph, moisture, humidity, temperature]]))
 
     best_prediction = prediction[0]
